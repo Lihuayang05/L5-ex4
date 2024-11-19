@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome6';
 const App = () => {
   const [answers, setAnswers] = useState({});
 
+  // Data source for the list
   const data = [
     {
       title: 'Easy',
@@ -38,7 +39,7 @@ const App = () => {
     },
     {
       title: 'Moderate',
-      bgColor: 'green',
+      bgColor: '#36955f',
       icon: 'cloudflare',
       data: [
         {
@@ -67,7 +68,7 @@ const App = () => {
     },
     {
       title: 'Hard',
-      bgColor: 'purple',
+      bgColor: '#c368df',
       icon: 'sun',
       data: [
         {
@@ -186,7 +187,6 @@ const styles = StyleSheet.create({
     padding: 10,
     marginVertical: 5,
     borderRadius: 5,
-    backgroundColor: '#4C956C',
   },
   sectionIcon: {
     marginRight: 10,
